@@ -1,0 +1,50 @@
+### GET – Alla produkter
+GET http://localhost:5072/api/products
+
+### GET – Produkt med ID
+GET http://localhost:5072/api/products/6
+
+
+### GET – Produkt med slug
+GET http://localhost:5072/api/products?slug=white-t-shirt
+
+### POST – Skapa en ny produkt
+POST http://localhost:5072/api/products
+Content-Type: application/json
+
+{
+  "name": "Test Product",
+  "description": "Test",
+  "price": 100,
+  "image": "test.jpg"
+}
+
+### DELETE – Ta bort en produkt
+DELETE http://localhost:5072/api/products/6
+
+### GET – Alla kategorier
+GET http://localhost:5072/api/categories
+
+### GET – Kategori med ID
+GET http://localhost:5072/api/categories/2
+
+### GET – Kategori med slug
+GET http://localhost:5072/api/categories?slug=t-shirts
+
+### POST – Skapa en ny kategori
+POST http://localhost:5072/api/categories
+Content-Type: application/json
+
+{
+  "name": "Test Category",
+  "image": "test.jpg"
+}
+
+### DELETE – Ta bort en kategori
+DELETE http://localhost:5072/api/categories/3
+
+### GET – Produkt med slug som inte finns
+GET http://localhost:5072/api/products?slug=finns-inte-12345
+
+### GET – Kategori med slug som inte finns
+GET http://localhost:5072/api/categories?slug=finns-inte-12345

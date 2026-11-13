@@ -1,0 +1,6 @@
+@FreakyFashionAPI_HostAddress = http://localhost:5072
+
+GET {{FreakyFashionAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
